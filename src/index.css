@@ -1,0 +1,93 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Barlow Condensed", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Custom dark styling for Leaflet container & popups */
+.leaflet-container {
+  background-color: #0a0a0a !important;
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  outline: none;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #171717 !important;
+  color: #f5f5f5 !important;
+  border: 1px solid #333333 !important;
+  border-radius: 6px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7), 0 8px 10px -6px rgba(0, 0, 0, 0.7) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #171717 !important;
+  border: 1px solid #333333 !important;
+}
+
+.leaflet-control-zoom a {
+  background-color: #171717 !important;
+  color: #e5e5e5 !important;
+  border-color: #333333 !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #262626 !important;
+  color: #ffffff !important;
+}
+
+.leaflet-control-attribution {
+  background-color: rgba(10, 10, 10, 0.8) !important;
+  color: #737373 !important;
+  font-size: 10px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #a3a3a3 !important;
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f3f;
+}
+
+/* Radar pulse animation for trucks */
+@keyframes radar-ping {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  70% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+}
+
+.animate-radar-ping {
+  animation: radar-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}

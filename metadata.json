@@ -1,0 +1,6 @@
+{
+  "name": "SnowOps Command Everett & Greater Boston",
+  "description": "Tactical snow operations management system with real-time fleet vehicle tracking, 113 geofenced client sites, automated zone clearance alerts, and live NWS winter weather updates for Everett and Greater Boston.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
